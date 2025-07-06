@@ -1,0 +1,116 @@
+@use "./funcionalidades" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $color_detalles;
+    font-family: "jost", sans-serif;
+}
+
+/*header*/
+.navbar {
+    background-color: #060709;
+    display: flex;
+    height: 10vh;
+    color: $color_detalles;
+    align-items: center;
+    justify-content: space-between;
+
+    .container-fluid {
+        background-color: #060709;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            height: 50px;
+            padding-right: 30px !important;
+        }
+        h1{
+            font-size: 1.4rem;
+        }
+
+        .navbar-brand {
+            color: $color_detalles !important;
+            background-color: transparent !important;
+            padding-bottom: 0;
+            transition: 0.6s;
+
+            &:hover {
+                font-size: 23px;
+            }
+        }
+
+        .navbar-toggler {
+            background-color: $color_detalles;
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-link {
+                    color: $color_detalles !important;
+                    background-color: transparent !important;
+                    transition: 0.6s;
+                    font-size: 1.3rem;
+
+                    &:hover {
+                        font-size: large !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*footer*/
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #060709;
+    color: $color_detalles;
+    font-size: 18px;
+    padding: 20px;
+
+    .footer-section {
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 300px;
+        align-items: center;
+
+        h3 {
+            font-size: 18px;
+            transition: 0.6s;
+            text-transform: uppercase;
+
+            &:hover {
+                font-size: 20px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            align-items: center;
+
+            li {
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $color_detalles;
+                    text-transform: initial;
+                    font-size: 16px;
+                    text-align: center;
+                    transition: 0.6s;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

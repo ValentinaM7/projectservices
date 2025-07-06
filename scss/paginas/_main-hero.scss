@@ -1,0 +1,154 @@
+/*index - hero and image*/
+@use "../base/funcionalidades";
+
+.main-text {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-image: url(../img/underwater.jpg);
+    background-size: cover;
+    background-position: center 38%;
+    color: $color_detalles;
+    padding: 15vh 20px;
+    text-align: center;
+
+    &::before {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+    }
+
+    p {
+        position: relative;
+        z-index: 1;
+        font-size: 48px;
+        font-style: italic;
+        text-align: center;
+        padding: 10px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+}
+
+/*reviews*/
+
+
+.carousel-inner {
+    .carousel-item {
+        img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            display: flex;
+            align-content: center;
+
+            h2 {
+                font-size: 1.5rem !important;
+                font-weight: normal;
+
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            h5 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+/* about the product_ cta buy and details*/
+.product {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 50%;
+    margin: 50px;
+
+    img {
+        height: 40vh;
+        width: 40vh;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    div {
+        font-size: 18px;
+        color: $color_base;
+        text-align: left;
+        padding: 20px;
+        margin-left: 10px;
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+    }
+
+    .button1,
+    .button2 {
+        @extend %boton;
+    }
+
+    .button1 {
+        background-color: $color_detalles;
+        border: 1px solid black;
+        list-style: none;
+        margin-right: 40px;
+        color: #060709;
+        font-size: 18px;
+
+        &:hover {
+            background-color: $hover_claro;
+        }
+    }
+
+    .button2 {
+        background-color: $color_base;
+        color: $color_detalles;
+        border: 1px solid black;
+        list-style: none;
+        font-size: 18px;
+
+        &:hover {
+            background-color: $hover_oscuro;
+        }
+    }
+}
+
+/*collabs*/
+.collabs-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.collabs {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    display: flex;
+    margin-bottom: 30px;
+
+    img {
+        height: 85px;
+        width: auto;
+        border-radius: 10px;
+
+        &:hover {
+            transform: scale(120%);
+            transition-duration: 1s;
+        }
+    }
+}

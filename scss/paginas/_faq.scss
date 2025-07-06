@@ -1,0 +1,59 @@
+/*FAQ*/
+.top_pict3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(../img/hi5.jpg);
+    background-size: cover;
+    background-position: center 48%;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    p {
+        color: #F0E9E9;
+        text-align: right;
+        font-size: 24px;
+        text-shadow: 1px 1px 2px black;
+        padding: 10px;
+        margin-bottom: 0px !important;
+    }
+}
+
+.title-faq {
+    font-size: 20px;
+    text-align: center;
+}
+
+.container-accordion {
+    display: flex;
+    justify-content: center;
+
+    .accordion {
+        width: 75%;
+        box-shadow: none;
+        margin-bottom: 70px;
+
+        .accordion-item {
+            box-shadow: none;
+
+            .accordion-header {
+                --bs-accordion-btn-focus-box-shadow: none;
+
+                .accordion-button {
+                    background-color: #060709 !important;
+                    color: #fafafa;
+                    &:not(.collapsed) {
+                        background-color: #060709 !important;
+                        color: #fafafa;
+                    }
+                }
+                .accordion-collapse {
+                    background-color: white;
+                    color: #060709;
+                }
+            }
+
+        }
+    }
+}
