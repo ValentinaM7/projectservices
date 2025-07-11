@@ -7,12 +7,14 @@
 
 body {
     background-color: $color_detalles;
-    font-family: "jost", sans-serif;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*header*/
 .navbar {
-    background-color: #060709;
+    background-color: $color_base;
     display: flex;
     height: 10vh;
     color: $color_detalles;
@@ -20,7 +22,7 @@ body {
     justify-content: space-between;
 
     .container-fluid {
-        background-color: #060709;
+        background-color: $color_base;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -69,7 +71,7 @@ body {
 .footer-container {
     display: flex;
     justify-content: center;
-    background-color: #060709;
+    background-color: $color_base;
     color: $color_detalles;
     font-size: 18px;
     padding: 20px;
