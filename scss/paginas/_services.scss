@@ -20,14 +20,16 @@
     }
 }
 
-.title-details {
+.title-services {
     text-align: center;
+    margin-top: 40px;
 }
 
-.list-of-details {
+.list-of-services {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-bottom: 50px;
 
     div {
         &:nth-child(n) {
@@ -37,10 +39,9 @@
             padding: 30px;
         }
 
-        .details-pole {
+        .services-list {
             width: 200px;
             height: auto;
-            border-radius: 150px;
             margin-right: 30px;
         }
 
